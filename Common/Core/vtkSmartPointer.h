@@ -134,7 +134,8 @@ public:
   // assignment operators.
   vtkSmartPointer& operator=(const vtkSmartPointer& r)
   {
-    this->vtkSmartPointerBase::operator=(r.GetPointer());
+    //SR - DS minor change
+    this->vtkSmartPointerBase::operator=(r);
     return *this;
   }
 

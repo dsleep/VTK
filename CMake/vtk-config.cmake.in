@@ -52,6 +52,9 @@ data.
 cmake_policy(PUSH)
 cmake_policy(VERSION 3.8...3.12)
 
+#SR - DS
+set(VTK_RENDERING_BACKEND "OpenGL2")
+
 set(_vtk_temp_variables)
 set(_vtk_real_components)
 foreach (_vtk_component IN LISTS "${CMAKE_FIND_PACKAGE_NAME}_FIND_COMPONENTS")

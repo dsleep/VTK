@@ -485,7 +485,8 @@ void QVTKWidget2::SupportsOpenGL(vtkObject*, unsigned long, void*, void* call_da
 
 void QVTKWidget2::Frame()
 {
-  this->Superclass::Frame();
+    //SR - DS HMMM
+  //this->Superclass::Frame();
   if (mRenWin->GetSwapBuffers())
   {
     this->swapBuffers();
